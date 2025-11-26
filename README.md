@@ -1,5 +1,6 @@
 <a id="top"></a>
-# CCE5502
+## CCE5502 - Fundamentals of AI & ML
+# Reinfocement Learning Robustness and Adaptation in Continuous Control
 
 * [Learning Goals](#learning-goals)
 * [Introduction: The Problem of Locomotion](#introduction-the-problem-of-locomotion)
@@ -24,10 +25,10 @@
 
 ## From Standard Benchmarks to Robust Robotics: The Ant Locomotion Playground
 
-[//]: # ( > [Your Name/Team Members Here])
+[//]: # ( > [Leander Grech])
 
 [//]: # ()
-[//]: # ( > Contact: your.email@plus.ac.at)
+[//]: # ( > Contact: leander.grech@um.edu.mt)
 
 This assignment guides you through fundamental reinforcement learning (RL) techniques using a classic robotics locomotion task. We will train an agent to walk, introduce a "domain shift" by changing the agent's body, observe the consequences, and then explore strategies for adaptation.
 
@@ -42,7 +43,7 @@ This assignment guides you through fundamental reinforcement learning (RL) techn
 
 ---
 
-# Introduction: The Problem of Locomotion
+## Introduction: The Problem of Locomotion
 Teaching a machine to walk is a classic problem in both robotics and artificial intelligence. It requires coordinating multiple joints (motors) to produce a stable and efficient pattern of movement, known as a "gait." This is a perfect problem for Reinforcement Learning because the exact sequence of motor commands is incredibly difficult to program by hand, but it's easy to define a high-level goal: "move forward as fast as possible."
 
 ### The "Hello World" of Robotics: `AntEnv`
@@ -78,8 +79,8 @@ We chose this Ant-based setup for its didactic value:
 
  ---
 
-# Approaches to Solve the Control Problem
-## **Reinforcement Learning (RL)**
+## Approaches to Solve the Control Problem
+### **Reinforcement Learning (RL)**
 
 RL is our primary tool for this problem. It's a data-driven approach where an agent learns an optimal policy through trial-and-error by interacting with its environment.
 
@@ -96,7 +97,7 @@ RL is our primary tool for this problem. It's a data-driven approach where an ag
  - **Tuning Complexity**: Performance is often very sensitive to the choice of algorithm and its hyperparameters.
 
 
-## **Why Learning-Based Approaches?**
+### **Why Learning-Based Approaches?**
 For a problem like ant locomotion, a purely analytical solution (e.g., deriving a set of equations that describe a perfect walking gait) is practically impossible. The system is:
 
  - **High-Dimensional**: Many joints must be controlled simultaneously.
@@ -111,9 +112,7 @@ This is where data-driven, learning-based methods like RL shine. They can learn 
 
 ---
 
-# Getting Started: The Tutorial Workflow
-This tutorial is a hands-on guide to training, testing, and adapting a policy.
-
+## Getting Started:
 ### 0. Installation & Setup
 Before you start, make sure you have set up your Python environment correctly by following the [Installation Guide](#installation-guide) at the end of this document. This involves creating a virtual environment and installing the packages from requirements.txt.
 
