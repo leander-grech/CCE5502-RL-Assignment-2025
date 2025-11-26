@@ -1,5 +1,5 @@
 <a id="top"></a>
-# Tutorial in Reinforcement Learning of the [RL-Bootcamp Salzburg 25](https://sarl-plus.github.io/RL-Bootcamp2025/program/program.html)
+# CCE5502
 
 * [Learning Goals](#learning-goals)
 * [Introduction: The Problem of Locomotion](#introduction-the-problem-of-locomotion)
@@ -29,7 +29,7 @@
 [//]: # ()
 [//]: # ( > Contact: your.email@plus.ac.at)
 
-Welcome to the **RL Bootcamp Tutorial**! This tutorial guides you through fundamental reinforcement learning (RL) techniques using a classic robotics locomotion task. We will train an agent to walk, introduce a "domain shift" by changing the agent's body, observe the consequences, and then explore strategies for adaptation.
+This assignment guides you through fundamental reinforcement learning (RL) techniques using a classic robotics locomotion task. We will train an agent to walk, introduce a "domain shift" by changing the agent's body, observe the consequences, and then explore strategies for adaptation.
 
 ## Learning Goals
  - Learn the basics of continuous control problems in a didactic and visual way.
@@ -339,29 +339,21 @@ python train.py -m experiment=hp_ant_baseline
 
 ### Repository Structure
 
-    RL_bootcamp_2025_tutorial/
+    CCE5502-RL-Assignment-2025/
     ├── config/                 # Hydra configuration files
     │   ├── agent/              # Agent-specific settings
-    │   ├── callbacks/          # Callbacks during training/evaluation
     │   ├── env/                # Environment definitions and parameters
     │   ├── experiment/         # Experiment configuration files
-    │   ├── hparams_search/     # Hyperparameter search configs
-    │   ├── learner/            # Learning wrapper configs
-    │   ├── policy/             # Policy architecture and parameters
-    │   ├── hparams_search/     # Hyperparameter search configs
     │   └── train.yaml          # Main training configuration
     ├── src/                    # Core source code
     │   ├── agent/              # Agent source code
     │   ├── envs/               # Environment source code
-    │   ├── models/             # Neural net definitons for feature extractors
     │   ├── utils/              # Helpers for instantiation and postprocessing
     │   └── wrappers/           # Code wrappers 
-    ├── AnalyseRun.ipynb        # Inference script evaluating policy snapshots
+    ├── post_training_analysis.py  # Evaluates trained agents
     ├── train.py                # Main training entry point
-    ├── vanilla_train.py        # A simple scipt to train without hydra (aimed for visualization, not recommended to use)
     ├── requirements.txt        # Python dependencies
     ├── README.md               # This file
-    └── LICENSE                 # License information
 
 
 
