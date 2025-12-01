@@ -1,6 +1,6 @@
 <a id="top"></a>
 ## CCE5502 - Fundamentals of AI & ML
-# Reinfocement Learning Robustness and Adaptation in Continuous Control
+# Reinforcement Learning Robustness and Adaptation in Continuous Control
 
 * [Learning Goals](#learning-goals)
 * [Introduction: The Problem of Locomotion](#introduction-the-problem-of-locomotion)
